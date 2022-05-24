@@ -1,5 +1,9 @@
+import { useRouter } from "next/router";
+
 function ClientsProjectsPage() {
-  return <div>Clients Projects Page</div>;
+  const router = useRouter();
+  const { id } = router.query;
+  return <div>Client {id} Projects Page</div>;
 }
 
 export default ClientsProjectsPage;
